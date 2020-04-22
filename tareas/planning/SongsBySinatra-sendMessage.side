@@ -1,0 +1,223 @@
+{
+  "id": "5ce1995f-5cd1-4273-86dd-841f6cd3a618",
+  "version": "2.0",
+  "name": "SongsBySinatra",
+  "url": "http://songs-by-sinatra.herokuapp.com",
+  "tests": [{
+    "id": "db83af04-1cee-4ecf-9839-2673a6a9b627",
+    "name": "send message",
+    "commands": [{
+      "id": "cfa27644-2cd2-4d43-b894-3818508462a5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9ffd311-2502-445d-853c-e979be75d475",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8aceb5a-07fb-4eb4-9825-f3a83f486456",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d21e011e-28ca-4821-a945-2c26fb0cfcf9",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=username",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "4cec603c-1847-4454-801e-8a9cec374878",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dae502b0-8c0f-4050-ab22-b17037eeaabe",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "f171b770-7317-46e3-883f-e7944a03a8a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "b38691d5-4d40-46ad-a260-259f4649537d",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc8edf3-6a30-42ba-895a-1c16571dc733",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@id='flash']/div",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "e55200bb-a717-45c7-9c14-2bb9e71b6d3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/contact')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "382eefd4-b61a-4ab9-9279-9455f092277f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "f586fd90-60f9-4d6e-a6c3-5a9b744d33ab",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'You can contact me by filling in the form below:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "beee1c97-e6be-4e7d-abcd-0c9a8124aaec",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a44639d-c11c-436e-a7fe-eec3cf8fe000",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Eve"
+    }, {
+      "id": "b1734f9b-95ff-4be7-8561-2657fe0abc81",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "eve@test.com"
+    }, {
+      "id": "9f6d8657-4106-4940-9633-bdcbedd7e8a2",
+      "comment": "",
+      "command": "type",
+      "target": "name=message",
+      "targets": [
+        ["name=message", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//textarea[@name='message']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "hello"
+    }, {
+      "id": "a66a53b2-e942-4257-8e4f-6189afbb98a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(7)",
+      "targets": [
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@value='Send Message']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e76318a-5534-4dfd-9198-fc8511c863d8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.flash",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "7b193991-3bc2-486a-be8e-a73278c9d65d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.flash",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e3eb6848-6cfc-4043-8446-1cc305069511",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["db83af04-1cee-4ecf-9839-2673a6a9b627"]
+  }],
+  "urls": ["http://songs-by-sinatra.herokuapp.com/"],
+  "plugins": []
+}
